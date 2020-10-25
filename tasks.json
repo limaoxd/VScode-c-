@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "publishConfig": {
+        "registry":"https://npm.pkg.github.com/@limaox"
+    },
+    "tasks": [
+        {
+            "label": ".exe",
+            "type": "shell",
+            "command": "g++ -o ${fileBasenameNoExtension} ${fileBasename} ; .\\${fileBasenameNoExtension}.exe",
+            "problemMatcher": []
+        }
+    ]
+}
